@@ -1,4 +1,18 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Croissant+One&family=Hepta+Slab&family=Orbitron:wght@500&display=swap');
 :root{
-    
+    --lofo-family: "Orbitron", sans-serif;
+    --title-family: "Amarante", serif;
+    --text-family: "Hepta Slab", serif;
+    --link-family: "Croissant One", serif;
+    --img-family: "Hepta Slab", serif;
+}
+
+:root {
+    --bg-color: #f92f2f;
+    --second-bg-color: #ffee49;
+    --title-color: #1b1b1b;
+    --text-color: #555;
+    --nav-color: #800000;
+    --logo-color: #1b1b1b;
+    --img-color: #da9100;
 }
