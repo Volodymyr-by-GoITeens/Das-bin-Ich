@@ -1,18 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Amarante&family=Croissant+One&family=Hepta+Slab&family=Orbitron:wght@500&display=swap');
 :root{
-    --lofo-family: "Orbitron", sans-serif;
+    --logo-family: "Orbitron", sans-serif;
     --title-family: "Amarante", serif;
     --text-family: "Hepta Slab", serif;
     --link-family: "Croissant One", serif;
     --img-family: "Hepta Slab", serif;
 }
-
 :root {
     --bg-color: #f92f2f;
     --second-bg-color: #ffee49;
     --title-color: #1b1b1b;
     --text-color: #555;
-    --nav-color: #800000;
+    --border-color: #800000;
     --logo-color: #1b1b1b;
+    --nav-color: #1b1b1b;
+    --accent-color: #343434;
     --img-color: #da9100;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+main {
+    background: linear-gradient(270deg,#f92f2f 0%, #ffee49 110%);
+    padding: 10px;
+}
+img {
+    transform: rotate(5deg) scale(0.9) skew(-4deg);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,1);
+    max-width: 500px;
+}
+
+/* header */
+.header {
+    padding: 20px 0;
+    border-bottom: 3px solid var(--border-color);
+}
+.header-container {
+    justify-content: space-between;
+    flex-direction: row;
+}
+.header-logo {
+    font-family: var(--logo-family);
+    color: var(--logo-color);
+    font-weight: 900;
+
+}
+.header-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.header-link {
+    font-family: var(--link-family);
+    color: var(--nav-color);
+}
+.header-link:hover {
+    color: var(--accent-color);
+}
+.header-item:hover::after {
+    content: "";
+    margin: 5px;
+    border: 1px solid var(--accent-color);
+    width: 100%;
 }
